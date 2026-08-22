@@ -1,1 +1,0 @@
-const buttons=document.querySelectorAll('header button');buttons.forEach(button=>{button.addEventListener('click',()=>{document.documentElement.dataset.theme=button.textContent==='Plan B'?'plan-b':'plan-a';localStorage.setItem('adl-theme',document.documentElement.dataset.theme);});});

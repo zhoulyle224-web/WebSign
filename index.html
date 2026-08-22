@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="signal">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>INTERLINKED — Art Direction System</title>
+<meta name="description" content="Geometric abstract × low-poly × constructivism × Japanese illustration — interactive game art direction showcase." />
+<link rel="stylesheet" href="style-a.css">
+<link rel="stylesheet" href="style-b.css">
+</head>
+<body>
+<div class="loader" id="loader"><div class="loader-inner"><div class="loader-line"></div><div class="loader-arc"></div><div class="loader-code">INTERLINKED / VISUAL SYSTEM INITIALIZING / 00—09</div></div></div>
+<div class="noise"></div><div class="scanlines"></div><div class="cursor" id="cursor"></div>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark"></span><div><strong>INTERLINKED</strong><small>ART DIRECTION / 2026.08</small></div></div>
+  <div class="top-right"><div class="mode-switch" aria-label="visual mode"><button class="active" data-theme-btn="signal">SIGNAL</button><button data-theme-btn="relic">RELIC</button></div><a class="index-link" href="#manifesto">INDEX / 01—06</a></div>
+</header>
+<nav class="rail" aria-label="section index">
+  <a href="#hero" class="active">00</a><a href="#manifesto">01</a><a href="#environment">02</a><a href="#character">03</a><a href="#combat">04</a><a href="#interface">05</a><a href="#process">06</a>
+</nav>
+<main>
+<section class="hero section" id="hero" data-index="00">
+  <div class="hero-grid"></div><div class="hero-axis"></div><div class="hero-arc"></div>
+  <div class="signal-blocks" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="hero-stamp">COORD / 31.20 — 08.26 / ACTIVE</div>
+  <div class="hero-figure" id="heroFigure" aria-label="original low-poly character abstraction">
+    <svg viewBox="0 0 520 820" role="img">
+      <defs><linearGradient id="coat" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f3f4f0"/><stop offset=".56" stop-color="#9ca2aa"/><stop offset="1" stop-color="#252931"/></linearGradient><linearGradient id="dark" x1="0" x2="1"><stop stop-color="#14171d"/><stop offset="1" stop-color="#454b55"/></linearGradient></defs>
+      <g opacity=".25" fill="none" class="sigstroke" stroke="#6c79ff" stroke-width="1"><path d="M34 210 L479 78 L439 720 L80 765 Z"/><path d="M60 677 L456 198"/><circle cx="282" cy="354" r="230"/></g>
+      <g transform="translate(34,20)">
+        <polygon class="sigfill" points="258,45 319,82 336,147 310,206 240,222 190,173 195,103" fill="#e9ebe6"/>
+        <polygon class="sigmid" points="191,104 258,45 238,222 162,172" fill="#7d838c"/>
+        <polygon points="318,81 354,113 336,177 308,206 327,145" fill="#252932"/>
+        <polygon class="sigaccent" points="212,123 237,114 232,128 209,137" fill="#2e42ff"/>
+        <polygon points="191,179 240,222 207,257 166,220" fill="#22262d"/>
+        <polygon class="sigfill" points="206,251 304,232 350,340 313,472 231,448 166,332" fill="url(#coat)"/>
+        <polygon points="166,332 231,448 193,665 88,617 102,411" fill="url(#dark)"/>
+        <polygon class="sigfill" points="313,471 342,654 260,738 194,665 231,448" fill="#dfe1dc"/>
+        <polygon class="sigmid" points="260,738 342,654 372,779 303,800" fill="#545a64"/>
+        <polygon points="194,665 260,738 230,805 166,799" fill="#1b1f26"/>
+        <polygon class="sigaccent" points="292,248 329,268 336,349 312,372 295,323" fill="#2e42ff"/>
+        <polygon points="113,383 68,490 78,568 122,481" fill="#c9ccd0"/><polygon points="347,341 402,466 384,508 329,398" fill="#c9ccd0"/>
+        <path d="M205 98 C220 39,308 27,334 110 C311 76,258 73,205 98Z" fill="#16191f"/>
+        <polygon points="204,98 164,145 176,183 214,128" fill="#262b33"/><polygon points="334,110 354,174 329,195 311,120" fill="#1f232a"/>
+        <line x1="176" y1="407" x2="387" y2="294" stroke="#fff" stroke-opacity=".55" stroke-width="1"/>
+        <line x1="188" y1="420" x2="401" y2="306" stroke="#2e42ff" stroke-opacity=".75" stroke-width="3"/>
+      </g>
+      <g font-family="monospace" font-size="9" fill="#a9b0ba"><text x="18" y="430">SUBJECT / ANON-07</text><text x="377" y="257">POLY 1842</text><text x="395" y="280">LAYER 03</text></g>
+    </svg>
+  </div>
+  <div class="hero-title reveal"><div class="kicker">00 / ENTRANCE — VISUAL SYSTEM</div><h1 class="display">INTER<br>LINKED</h1><div class="sub"><span class="serial">SIG_00.2026</span><p>GEOMETRIC ABSTRACT / LOW POLY / CONSTRUCTIVISM / JAPANESE ILLUSTRATION<br>一个用于验证游戏场景、人物、战斗、UI 与制作过程的动态美术语言系统。</p></div></div>
+  <div class="hero-caption micro">DARK SPACE AS CANVAS<br>BRIGHT SUBJECT AS EVENT<br>GEOMETRY AS ORDER<br>COLLAGE AS NARRATIVE</div><div class="scroll-indicator">SCROLL / DESCEND</div>
+</section>
+
+<section class="manifesto section" id="manifesto" data-index="01"><div class="big-orbit"></div><div class="kicker reveal">01 / VISUAL MANIFESTO</div><h2 class="display manifesto-title reveal">ONE SYSTEM.<br>TWO STATES.</h2><div class="manifesto-grid"><p class="manifesto-copy reveal">黑暗空间不是背景，而是一种叙事容器。<br><b>人物是事件，几何是秩序，文字是构成，动效让平面设计获得时间维度。</b></p><div class="rules reveal"><div class="rule"><b>01</b><h4>Asymmetry</h4><p>拒绝传统居中展示，用偏心轴线与结构交点稳定画面。</p></div><div class="rule"><b>02</b><h4>Scale Conflict</h4><p>超大几何结构与微型编号并置，制造尺度感。</p></div><div class="rule"><b>03</b><h4>Interlock</h4><p>人物、文字、场景和几何体进入同一空间，相互遮挡。</p></div><div class="rule"><b>04</b><h4>Breathing Room</h4><p>高密度拼贴之间保留大块负空间，控制节奏与可读性。</p></div></div></div></section>
+
+<section class="environment section" id="environment" data-index="02"><div class="kicker reveal">02 / ENVIRONMENT — SPACE STAGE</div><div class="env-stage reveal"><div class="env-sun"></div><div class="env-label">SILENT<br><span>INFRASTRUCTURE</span></div><div class="env-notes micro">WORLD CELL / 04<br>FORM / INDUSTRIAL MONOLITH<br>LIGHT / COLD DIFFUSE<br>CAMERA / 28MM ABSTRACTED</div><div class="horizon"></div><div class="city" data-parallax="0.08"><div class="building b1"></div><div class="building b2"></div><div class="building b3"></div><div class="building b4"></div><div class="building b5"></div><div class="building b6"></div></div><div class="env-blue"></div></div><div class="micro reveal" style="margin-top:20px;max-width:760px">场景展示不做传统大图 + 文字说明，而是把场景本身变成“空间舞台”：建筑轮廓、巨型圆弧、地平线与小字号参数共同组织视线，前中后景在滚动中产生轻微速度差。</div></section>
+
+<section class="character section" id="character" data-index="03"><div class="kicker reveal">03 / CHARACTER — CONSTRUCTION SLICE</div><div class="char-layout"><div class="char-type reveal"><div class="vertical">FULL / CROP / POLY / LINE / SILHOUETTE</div><h2>Subject<br><em>as</em><br>Structure.</h2><p class="micro" style="max-width:330px;margin-top:34px">人物不固定为整张立绘。完整形态、局部切片、低多边形、线稿残影、剪影可以根据内容切换，让同一角色在不同章节承担不同的视觉功能。</p></div><div class="char-art reveal"><div class="red-circle"></div><div class="portrait"><svg viewBox="0 0 640 760"><g opacity=".22" fill="none" stroke="#fff"><circle cx="337" cy="338" r="230"/><path d="M64 596 L573 105"/><path d="M34 309 H615"/></g><g transform="translate(75,18)"><polygon points="265,36 340,85 354,166 315,224 226,219 182,157 201,77" fill="#e8e9e5"/><polygon points="182,157 226,219 198,276 157,225" fill="#353a43"/><polygon points="201,77 265,36 225,219 164,157" fill="#727984"/><path d="M194 78 Q260 11 341 88 Q302 53 194 78" fill="#181b20"/><polygon points="203,272 324,234 387,379 337,576 204,559 137,403" fill="#d9dbd7"/><polygon points="137,403 204,559 177,702 71,653 78,479" fill="#2c3139"/><polygon points="337,576 382,686 322,740 249,708 204,559" fill="#8f959e"/><polygon points="301,246 350,269 358,369 329,401 303,345" fill="#2e42ff"/><polygon points="91,433 45,544 60,592 109,480" fill="#d4d5d0"/><polygon points="377,384 439,503 420,548 355,428" fill="#d4d5d0"/><polygon points="214,119 248,106 240,124 208,137" fill="#2e42ff"/><line x1="118" y1="516" x2="410" y2="299" stroke="#fff"/><line x1="125" y1="528" x2="416" y2="311" stroke="#2e42ff" stroke-width="4"/></g></svg></div><div class="slice s1" data-label="FACE / DETAIL"></div><div class="slice s2" data-label="WEAPON / VECTOR"></div><div class="slice s3" data-label="FABRIC / POLY"></div><div class="char-codes">CH_017 / UNIT TEST<br>ILLUSTRATION → POLYGON<br>HIGHLIGHT / 72%<br>EDGE / 1PX</div></div></div></section>
+
+<section class="combat section" id="combat" data-index="04"><div class="combat-head"><div><div class="kicker reveal">04 / COMBAT — HORIZONTAL MONTAGE</div><h2 class="display reveal">IMPACT<br>SEQUENCE</h2></div><p class="reveal">战斗不靠“截图陈列”，而是横向连续长条：动作、技能、UI、特效与分镜沿轨道推进，停止时重新吸附成一张完整海报。</p></div><div class="track-wrap reveal" id="trackWrap"><div class="combat-line"></div><div class="drag-hint">DRAG / WHEEL — HORIZONTAL</div><div class="track" id="track">
+<div class="panel wide"><span class="tag">FRAME / 001 — CONTACT</span><svg viewBox="0 0 800 520"><rect width="800" height="520" fill="#090b0e"/><circle cx="537" cy="259" r="172" fill="none" stroke="#2e42ff" stroke-width="2"/><circle cx="537" cy="259" r="124" fill="none" stroke="#fff" stroke-opacity=".25"/><path d="M60 390 L430 118 L371 408 Z" fill="#dfe2de"/><path d="M214 350 L653 122" stroke="#2e42ff" stroke-width="12"/><path d="M240 371 L690 140" stroke="#fff" stroke-width="2"/><g stroke="#7d8490" stroke-width="1" opacity=".5"><path d="M0 115 H800"/><path d="M0 390 H800"/><path d="M130 0 V520"/><path d="M670 0 V520"/></g></svg><span class="cap">Vector clash / impact field</span><span class="num">01</span></div>
+<div class="panel thin"><span class="tag">FRAME / 002 — BREAK</span><svg viewBox="0 0 400 520"><rect width="400" height="520" fill="#0d0f12"/><g fill="#dfe2de"><polygon points="40,116 173,56 188,224 66,252"/><polygon points="198,147 350,98 337,302 211,276"/><polygon points="78,309 187,244 194,455 43,424"/></g><polygon points="142,30 187,70 164,114 122,86" fill="#2e42ff"/><path d="M-30 476 L410 87" stroke="#2e42ff" stroke-width="4"/></svg><span class="cap">Polygon fragmentation</span><span class="num">02</span></div>
+<div class="panel"><span class="tag">FRAME / 003 — SIGNAL</span><svg viewBox="0 0 540 520"><rect width="540" height="520" fill="#050608"/><g fill="none" stroke="#fff" stroke-opacity=".3"><circle cx="260" cy="265" r="188"/><circle cx="260" cy="265" r="120"/><path d="M0 265 H540"/><path d="M260 0 V520"/></g><path d="M64 432 C160 116 394 97 502 360" fill="none" stroke="#2e42ff" stroke-width="19"/><rect x="231" y="235" width="58" height="58" fill="#e8e9e5" transform="rotate(45 260 264)"/></svg><span class="cap">Skill targeting / signal lock</span><span class="num">03</span></div>
+<div class="panel wide"><span class="tag">FRAME / 004 — AFTERIMAGE</span><svg viewBox="0 0 800 520"><rect width="800" height="520" fill="#090a0c"/><g opacity=".18" fill="#f4f4ef"><polygon points="143,83 296,51 379,242 274,448 94,378"/><polygon points="244,58 409,84 489,260 379,446 199,341"/><polygon points="351,91 512,142 565,318 432,445 286,315"/></g><polygon points="330,64 481,111 543,316 423,456 281,309" fill="#dfe2de"/><polygon points="421,92 487,120 507,189 457,180" fill="#2e42ff"/><path d="M46 465 L752 74" stroke="#2e42ff" stroke-width="3"/></svg><span class="cap">Afterimage / temporal compression</span><span class="num">04</span></div>
+<div class="panel"><span class="tag">FRAME / 005 — ABSORB</span><svg viewBox="0 0 540 520"><rect width="540" height="520" fill="#050608"/><circle cx="270" cy="260" r="190" fill="#2e42ff" opacity=".14"/><circle cx="270" cy="260" r="132" fill="none" stroke="#fff" stroke-opacity=".45"/><g fill="#e8e9e5"><rect x="264" y="38" width="12" height="90"/><rect x="264" y="392" width="12" height="90"/><rect x="48" y="254" width="90" height="12"/><rect x="402" y="254" width="90" height="12"/></g><polygon points="270,159 364,260 270,362 176,260" fill="#e8e9e5"/><polygon points="270,159 364,260 270,260" fill="#7b828c"/></svg><span class="cap">Collapse / reset</span><span class="num">05</span></div>
+</div></div></section>
+
+<section class="interface section" id="interface" data-index="05"><div class="kicker reveal">05 / INTERFACE & VFX — INFORMATION AS RHYTHM</div><div class="ui-stage"><div class="hud-board reveal"><div class="hud-ring"></div><div class="hud-cross"></div><div class="hud-card hc1">NODE / 08<br>SYNC 74.3%<br>LINK — STABLE</div><div class="hud-card hc2">TARGET<br>RANGE 43m<br>ANGLE 17.02</div><div class="hud-card hc3">ABILITY / “INTERLOCK”<br>VISUAL STATE: CHARGED<br>INPUT VECTOR: 2.20 / -1.08</div><i class="hud-dot" style="left:32%;top:45%"></i><i class="hud-dot" style="left:68%;top:34%"></i><i class="hud-dot" style="left:54%;top:68%"></i></div><div class="ui-copy reveal"><div class="micro">NOT A HUD WALL / NOT A DASHBOARD</div><h2 class="display">UI IS<br>PART OF<br>THE POSTER.</h2><p>小字号英文、编号、定位块与几何信号只承担节奏与交互提示，不让界面退化成密集游戏 HUD。真正的信息层级依然由构图、尺度和动效完成。</p><div class="chip-row"><span class="chip hot">SCAN</span><span class="chip">PARALLAX</span><span class="chip">MASK REVEAL</span><span class="chip hot">POLY BREAK</span><span class="chip">LIGHT TRACE</span></div></div></div></section>
+
+<section class="process section" id="process" data-index="06"><div class="kicker reveal">06 / PROCESS — RELIC COLLAGE TEST</div><div class="process-head"><h2 class="reveal">From <em>Sketch</em><br>to Artifact.</h2><div class="micro reveal">SKETCH / LOW-POLY / COLOR TEST<br>TYPE STUDY / MOTION KEYFRAME<br>FINAL COMPOSITION</div></div><div class="process-collage reveal"><div class="pc"><span class="label">STUDY 01 / FORM</span><div class="wire"></div><div class="poly p1"></div><div class="poly p2"></div><div class="type-giant">A</div></div><div class="pc"><span class="label">STUDY 02 / RED ANCHOR</span><div class="paper-lines"></div></div><div class="pc"><span class="label">STUDY 03 / PAPER</span><div class="red-disk"></div><div style="position:absolute;left:25px;bottom:22px;font-family:Georgia;font-size:40px;line-height:.9">Misprint<br>Memory</div></div><div class="pc"><span class="label">STUDY 04 / LOW POLY</span><svg viewBox="0 0 800 300"><rect width="800" height="300" fill="#0c0b0c"/><g transform="translate(130,-20)"><polygon points="196,34 289,78 325,183 258,279 135,251 91,139" fill="#dbd3c8"/><polygon points="91,139 196,34 164,251 78,212" fill="#766d67"/><polygon points="289,78 390,152 358,259 258,279 325,183" fill="#373131"/><polygon points="206,105 244,92 235,112 200,121" fill="#e7483d"/></g><path d="M0 246 L800 58" stroke="#8f2728" stroke-width="7"/><text x="545" y="240" fill="#e9e1d2" font-family="Georgia" font-size="82">RELIC</text></svg></div><div class="pc"><span class="label">STUDY 05 / TYPE</span><div style="position:absolute;left:20px;right:20px;top:60px;font-family:Georgia;font-size:56px;line-height:.75">構成<br><i>fragments</i><br>199·9</div></div></div></section>
+</main>
+<footer class="footer"><h2 class="reveal">ART IS A<br><span>SYSTEM.</span></h2><div class="footer-meta reveal"><p>本页面是第一版原创美术方向原型。它使用同一套信息结构验证 SIGNAL 与 RELIC 两种情绪，并预留 Environment / Character / Combat / Interface & VFX / Process 作为后续真实素材替换入口。</p><b>INTERLINKED / END OF PROTOTYPE / 00—06</b></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

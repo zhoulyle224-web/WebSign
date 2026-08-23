@@ -419,7 +419,9 @@ img { display: block; width: 100%; }
 .architecture-page .architecture-visual { min-height: 390px; transform: scale(.82); transform-origin: 52% 52%; }
 .architecture-page .module-script { top: 24%; right: 4%; }
 
-.architecture-gallery { margin-top: 18px; border-top: 1px solid var(--line); }
+.architecture-galleries { margin-top: 18px; }
+.architecture-gallery { border-top: 1px solid var(--line); }
+.architecture-gallery[hidden] { display: none; }
 .architecture-gallery-head { min-height: 92px; display: grid; grid-template-columns: 1fr auto auto; gap: 28px; align-items: center; border-bottom: 1px solid var(--line); padding: 14px 4px; }
 .architecture-gallery-head > div { display: flex; gap: 16px; align-items: baseline; }
 .architecture-gallery-head span, .architecture-gallery-head small { font: 8px var(--mono); letter-spacing: .1em; }
@@ -433,6 +435,7 @@ img { display: block; width: 100%; }
 .architecture-tile button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 .architecture-tile figcaption { min-height: 39px; display: flex; justify-content: space-between; align-items: center; padding: 9px 11px; font: 8px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
 .architecture-tile figcaption span { color: var(--accent); }
+.theme-b .architecture-tile button { background: color-mix(in srgb, var(--paper) 84%, #eadfd8); }
 
 .image-lightbox { width: min(94vw, 1500px); height: min(92vh, 980px); max-width: none; max-height: none; padding: 0; border: 1px solid rgba(255,255,255,.24); background: #0a0a0c; color: white; overflow: hidden; }
 .image-lightbox::backdrop { background: rgba(5,6,8,.86); backdrop-filter: blur(8px); }

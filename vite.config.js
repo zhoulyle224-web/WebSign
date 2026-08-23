@@ -1,9 +1,25 @@
 import { resolve } from "node:path";
+import { copyFile, mkdir } from "node:fs/promises";
 import { defineConfig } from "vite";
 import { sites } from "@openai/sites-vite-plugin";
 
+function staticWorkerEntry() {
+  return {
+    name: "static-worker-entry",
+    apply: "build",
+    async closeBundle() {
+      const serverOutput = resolve(import.meta.dirname, "dist/server");
+      await mkdir(serverOutput, { recursive: true });
+      await copyFile(
+        resolve(import.meta.dirname, "server/worker.js"),
+        resolve(serverOutput, "index.js")
+      );
+    }
+  };
+}
+
 export default defineConfig({
-  plugins: [sites()],
+  plugins: [sites(), staticWorkerEntry()],
   build: {
     rollupOptions: {
       input: {

@@ -24,7 +24,6 @@ const revealTargets = document.querySelectorAll([
   '.overview-card',
   '.route-panel',
   '.process-column',
-  '.architecture-tile',
   '.sequence-cell',
   '.enemy-node',
   '.hud-panel',

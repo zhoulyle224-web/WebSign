@@ -19,6 +19,9 @@ function setTheme(theme) {
   document.querySelectorAll('[data-route-label]').forEach((label) => {
     label.textContent = next === 'b' ? 'Plan B' : 'Plan A';
   });
+  document.querySelectorAll('[data-route-content]').forEach((panel) => {
+    panel.hidden = panel.dataset.routeContent !== next;
+  });
   localStorage.setItem('adl-theme', next);
   currentTheme = next;
 

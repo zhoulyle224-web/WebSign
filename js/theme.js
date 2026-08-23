@@ -1,3 +1,5 @@
+import './particles.js';
+
 const root = document.body;
 const savedTheme = localStorage.getItem('adl-theme') || 'a';
 

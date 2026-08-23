@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Overview of the Art Direction Lab visual routes and project categories.">
+  <title>Overview — Art Direction Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="overview-page" data-page="overview">
+  <aside class="rail rail-left" aria-label="Page position">
+    <a class="compass" href="index.html" aria-label="Art Direction Lab home"><span></span></a>
+    <div class="folio"><strong>02</strong><small>/ 07</small></div>
+    <div class="rail-line"></div>
+    <div class="rail-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div>
+    <span class="rail-note">SCROLL TO EXPLORE</span>
+  </aside>
+  <aside class="rail rail-right" aria-hidden="true"><span class="crosshair"></span><span class="rail-note">LABORATORY ARCHIVE</span></aside>
+
+  <div class="site-frame">
+    <header class="site-header">
+      <a class="brand" href="index.html"><strong>Art Direction Lab</strong><small>GAME ART EXPLORATION PLATFORM</small></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a><a class="active" href="overview.html">Overview</a><a href="architecture.html">Architecture</a><a href="costume.html">Costume</a><a href="battle.html">Battle</a><a href="enemy.html">Enemy</a><a href="ui.html">UI Design</a>
+      </nav>
+      <div class="route-switch" aria-label="Visual route"><span>ROUTE</span><div><button class="active" type="button" data-theme="a" onclick="setTheme('a')">Plan A</button><button type="button" data-theme="b" onclick="setTheme('b')">Plan B</button></div></div>
+    </header>
+
+    <main class="overview-main">
+      <section class="overview-lead">
+        <div class="overview-title">
+          <p class="eyebrow">ART DIRECTION LAB // OVERVIEW</p>
+          <h1>Overview<span>.</span></h1>
+          <p>A curated overview of game art categories. Discover two visual routes, each with a distinct art direction perspective.</p>
+        </div>
+        <div class="route-panels">
+          <article class="route-panel plan-a-panel">
+            <div><p>// ROUTE A</p><h2>Plan A</h2><small>FUTURISTIC // MINIMAL // ORDER</small></div>
+            <div class="route-art route-art-a" role="img" aria-label="Original ordered geometric route composition"></div>
+            <a href="architecture.html">View details →</a>
+          </article>
+          <span class="versus">VS</span>
+          <article class="route-panel plan-b-panel">
+            <div><p>// ROUTE B</p><h2>Plan B</h2><small>MYTHIC // ORGANIC // CHAOS</small></div>
+            <div class="route-art route-art-b" role="img" aria-label="Original organic geometric route composition"></div>
+            <a href="enemy.html">View details →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="overview-categories" aria-label="Art direction categories">
+        <a href="architecture.html" class="overview-card"><span>01</span><h2>Architecture</h2><div class="card-art art-architecture" aria-hidden="true"></div><div><strong>12</strong><small>Curated studies<br>Futurism · Structure · Scale</small></div></a>
+        <a href="costume.html" class="overview-card"><span>02</span><h2>Costume</h2><div class="card-art art-costume" aria-hidden="true"></div><div><strong>18</strong><small>Curated studies<br>Silhouette · Material · Detail</small></div></a>
+        <a href="battle.html" class="overview-card"><span>03</span><h2>Battle</h2><div class="card-art art-battle" aria-hidden="true"></div><div><strong>14</strong><small>Curated studies<br>Impact · Moment · Rhythm</small></div></a>
+        <a href="enemy.html" class="overview-card"><span>04</span><h2>Enemy</h2><div class="card-art art-enemy" aria-hidden="true"></div><div><strong>16</strong><small>Curated studies<br>Threat · Scale · Behavior</small></div></a>
+        <a href="ui.html" class="overview-card"><span>05</span><h2>UI Design</h2><div class="card-art art-ui" aria-hidden="true"></div><div><strong>10</strong><small>Curated studies<br>Clarity · System · Aesthetic</small></div></a>
+      </section>
+
+      <section class="featured-strip">
+        <div><p>FEATURED PROJECTS</p><a href="architecture.html">Explore the archive →</a></div>
+        <i class="mini-art mini-art-a" aria-hidden="true"></i>
+        <i class="mini-art mini-art-b" aria-hidden="true"></i>
+        <i class="mini-art mini-art-c" aria-hidden="true"></i>
+        <i class="mini-art mini-art-d" aria-hidden="true"></i>
+        <strong>01 <small>/ 05</small></strong>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 Art Direction Lab</span><span>Overview · 02</span><span>EN</span></footer>
+  </div>
+  <script type="module" src="js/theme.js"></script>
+</body>
+</html>

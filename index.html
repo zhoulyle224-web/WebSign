@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Art Direction Lab — a static multi-page game art direction archive.">
+  <meta property="og:title" content="Art Direction Lab — Craft Beyond Vision">
+  <meta property="og:description" content="An original multi-page archive for game art direction, visual systems, and world-building studies.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Art Direction Lab — Craft Beyond Vision">
+  <meta name="twitter:description" content="Original game art direction studies across architecture, costume, battle, enemy, and UI design.">
+  <meta name="twitter:image" content="/assets/og.png">
+  <title>Art Direction Lab — Craft Beyond Vision</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page" data-page="home">
+  <aside class="rail rail-left" aria-label="Page position">
+    <a class="compass" href="index.html" aria-label="Art Direction Lab home"><span></span></a>
+    <div class="folio"><strong>01</strong><small>/ 07</small></div>
+    <div class="rail-line"></div>
+    <div class="rail-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div>
+    <span class="rail-note">SCROLL TO EXPLORE</span>
+  </aside>
+
+  <aside class="rail rail-right" aria-hidden="true">
+    <span class="crosshair"></span>
+    <span class="rail-note">EXPERIMENTAL ARCHIVE</span>
+  </aside>
+
+  <div class="site-frame">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <strong>Art Direction Lab</strong>
+        <small>GAME ART EXPLORATION PLATFORM</small>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="overview.html">Overview</a>
+        <a href="architecture.html">Architecture</a>
+        <a href="costume.html">Costume</a>
+        <a href="battle.html">Battle</a>
+        <a href="enemy.html">Enemy</a>
+        <a href="ui.html">UI Design</a>
+      </nav>
+      <div class="route-switch" aria-label="Visual route">
+        <span>ROUTE</span>
+        <div>
+          <button class="active" type="button" data-theme="a" onclick="setTheme('a')">Plan A</button>
+          <button type="button" data-theme="b" onclick="setTheme('b')">Plan B</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="home-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">ART · DESIGN · EXPERIENCE</p>
+          <h1>Craft<br>Beyond<br>Vision<span>.</span></h1>
+          <p class="hero-deck">An experimental space for game art direction, exploring visual narratives, systems, and the future of worlds.</p>
+          <a class="text-link" href="overview.html">Explore projects <span>→</span></a>
+        </div>
+
+        <div class="hero-composition" aria-label="Selected art direction references">
+          <div class="blueprint-grid"></div>
+          <div class="orb orb-blue"></div>
+          <div class="orb orb-black"></div>
+          <div class="geo geo-triangle"></div>
+          <div class="original-art hero-image hero-image-main" role="img" aria-label="Original technical geometry composition"><i></i><i></i><i></i><i></i></div>
+          <div class="original-art hero-image hero-image-a" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="original-art hero-image hero-image-b" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="route-label route-a">// PLAN A</span>
+          <span class="route-label route-b">// PLAN B</span>
+          <div class="coordinate coordinate-one">AXIS 01 — 042</div>
+          <div class="coordinate coordinate-two">EXPLORATION / EXPERIMENT / EVOLUTION</div>
+        </div>
+
+        <div class="current-route">
+          <small>CURRENT ROUTE</small>
+          <strong data-route-label>Plan A</strong>
+          <span><i></i><i></i><i></i><i></i></span>
+        </div>
+      </section>
+
+      <section class="project-strip" aria-label="Project categories">
+        <a class="project-card" href="architecture.html"><span>01</span><strong>Architecture</strong><div class="card-art art-architecture" aria-hidden="true"></div><small>View →</small></a>
+        <a class="project-card" href="costume.html"><span>02</span><strong>Costume</strong><div class="card-art art-costume" aria-hidden="true"></div><small>View →</small></a>
+        <a class="project-card" href="battle.html"><span>03</span><strong>Battle</strong><div class="card-art art-battle" aria-hidden="true"></div><small>View →</small></a>
+        <a class="project-card" href="enemy.html"><span>04</span><strong>Enemy</strong><div class="card-art art-enemy" aria-hidden="true"></div><small>View →</small></a>
+        <a class="project-card" href="ui.html"><span>05</span><strong>UI Design</strong><div class="card-art art-ui" aria-hidden="true"></div><small>View →</small></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 Art Direction Lab</span><span>Static Concept Study · 01</span><span>EN</span></footer>
+  </div>
+
+  <script type="module" src="js/theme.js"></script>
+</body>
+</html>

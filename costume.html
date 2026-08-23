@@ -1,31 +1,31 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><title>Art Direction Lab</title><link rel="stylesheet" href="css/style.css"></head>
-<body>
-<header>
-<div class="logo">Art Direction Lab</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="overview.html">Overview</a>
-<a href="architecture.html">Architecture</a>
-<a href="costume.html">Costume</a>
-<a href="battle.html">Battle</a>
-<a href="enemy.html">Enemy</a>
-<a href="ui.html">UI Design</a>
-</nav>
-<div class="switch">
-<button data-theme="a" onclick="setTheme('a')">Plan A</button>
-<button data-theme="b" onclick="setTheme('b')">Plan B</button>
-</div>
-</header>
-<main class="page">
-<p class="kicker">ART DIRECTION LAB / COSTUME</p>
-<h1>Costume</h1>
-<div class="hero-art"></div>
-<div class="process">
-<div>REFERENCE<br><br>Reference images</div>
-<div>SKETCH<br><br>Draft / Process</div>
-<div>FINAL<br><br>Final artwork</div>
-</div>
-</main>
-<script src="js/theme.js"></script>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Costume studies from Art Direction Lab."><title>Costume — Art Direction Lab</title><link rel="stylesheet" href="css/style.css"></head>
+<body class="module-page costume-page" data-page="costume">
+  <aside class="rail rail-left" aria-label="Page position"><a class="compass" href="index.html" aria-label="Art Direction Lab home"><span></span></a><div class="folio"><strong>04</strong><small>/ 07</small></div><div class="rail-line"></div><div class="rail-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div><span class="rail-note">SCROLL TO EXPLORE</span></aside>
+  <aside class="rail rail-right" aria-hidden="true"><span class="crosshair"></span><span class="rail-note">SILHOUETTE / MATERIAL / ROLE</span></aside>
+  <div class="site-frame">
+    <header class="site-header"><a class="brand" href="index.html"><strong>Art Direction Lab</strong><small>GAME ART EXPLORATION PLATFORM</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button><nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="overview.html">Overview</a><a href="architecture.html">Architecture</a><a class="active" href="costume.html">Costume</a><a href="battle.html">Battle</a><a href="enemy.html">Enemy</a><a href="ui.html">UI Design</a></nav><div class="route-switch" aria-label="Visual route"><span>ROUTE</span><div><button class="active" type="button" data-theme="a" onclick="setTheme('a')">Plan A</button><button type="button" data-theme="b" onclick="setTheme('b')">Plan B</button></div></div></header>
+    <main class="module-main">
+      <section class="module-hero costume-hero">
+        <div class="module-copy"><p class="eyebrow">ART DIRECTION × COSTUME</p><h1>Costume<span>.</span></h1><p>Silhouette is narrative at first glance. Material, rhythm, and proportion translate role, origin, and motion into a readable visual language.</p><a class="text-link" href="#process">Explore studies <span>→</span></a></div>
+        <div class="module-visual costume-visual" role="img" aria-label="Original abstract costume silhouette board"><i></i><i></i><i></i><i></i><b></b><b></b><b></b></div>
+        <div class="module-script" aria-hidden="true"><strong>装<br>束<span>.</span></strong><small>SILHOUETTE<br>MATERIAL<br>IDENTITY</small></div>
+        <div class="current-route"><small>CURRENT ROUTE</small><strong data-route-label>Plan A</strong><span><i></i><i></i><i></i><i></i></span></div>
+      </section>
+      <section id="process" class="process-board costume-process">
+        <article><p>01</p><h2>Silhouette</h2><div class="study-art costume-silhouette"><i></i><i></i><i></i></div><small>Readability · mass · negative space</small></article>
+        <article><p>02</p><h2>Material</h2><div class="study-art costume-material"><i></i><i></i><i></i></div><small>Texture · weight · construction logic</small></article>
+        <article><p>03</p><h2>Detail</h2><div class="study-art costume-detail"><i></i><i></i><i></i></div><small>Fastening · ornament · faction language</small></article>
+      </section>
+      <section class="module-projects costume-projects" aria-label="Costume concepts">
+        <a href="#process"><span>01</span><h3>Archivist</h3><div class="card-art costume-card-a"></div><small>View →</small></a>
+        <a href="#process"><span>02</span><h3>Wayfinder</h3><div class="card-art costume-card-b"></div><small>View →</small></a>
+        <a href="#process"><span>03</span><h3>Signal Guard</h3><div class="card-art costume-card-c"></div><small>View →</small></a>
+        <a href="#process"><span>04</span><h3>Relic Keeper</h3><div class="card-art costume-card-d"></div><small>View →</small></a>
+        <a href="#process"><span>05</span><h3>Field Unit</h3><div class="card-art costume-card-e"></div><small>View →</small></a>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 Art Direction Lab</span><span>Costume · 04</span><span>EN</span></footer>
+  </div><script type="module" src="js/theme.js"></script>
 </body></html>

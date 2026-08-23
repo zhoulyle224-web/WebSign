@@ -16,6 +16,10 @@ function setTheme(theme) {
   localStorage.setItem('adl-theme', next);
 }
 
+// The route controls live in HTML attributes, so expose the route setter even
+// though this file is loaded as an ES module by the production build.
+window.setTheme = setTheme;
+
 setTheme(savedTheme);
 
 const navToggle = document.querySelector('.nav-toggle');

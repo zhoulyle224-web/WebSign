@@ -29,6 +29,7 @@ export default defineConfig({
         costume: resolve(import.meta.dirname, "costume.html"),
         battle: resolve(import.meta.dirname, "battle.html"),
         enemy: resolve(import.meta.dirname, "enemy.html"),
+        area: resolve(import.meta.dirname, "area.html"),
         ui: resolve(import.meta.dirname, "ui.html")
       },
       output: {

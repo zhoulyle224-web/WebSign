@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive combat area and encounter progression studies from Art Direction Lab.">
+  <title>Area — Art Direction Lab</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="module-page area-page" data-page="area" data-sector="a">
+  <aside class="rail rail-left" aria-label="Page position"><a class="compass" href="index.html" aria-label="Art Direction Lab home"><span></span></a><div class="folio"><strong>07</strong><small>/ 08</small></div><div class="rail-line"></div><div class="rail-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div><span class="rail-note">SELECT A SECTOR</span></aside>
+  <aside class="rail rail-right" aria-hidden="true"><span class="crosshair"></span><span class="rail-note">MAP / INTERIOR / DEPTH</span></aside>
+  <div class="site-frame">
+    <header class="site-header"><a class="brand" href="index.html"><strong>Art Direction Lab</strong><small>GAME ART EXPLORATION PLATFORM</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button><nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="overview.html">Overview</a><a href="architecture.html">Architecture</a><a href="costume.html">Costume</a><a href="battle.html">Battle</a><a href="enemy.html">Enemy</a><a class="active" href="area.html">Area</a><a href="ui.html">UI Design</a></nav><div class="route-switch" aria-label="Visual route"><span>ROUTE</span><div><button class="active" type="button" data-theme="a" onclick="setTheme('a')">Plan A</button><button type="button" data-theme="b" onclick="setTheme('b')">Plan B</button></div></div></header>
+
+    <main class="area-main">
+      <header class="area-command-head">
+        <div><p class="eyebrow">ART DIRECTION × COMBAT AREA</p><h1>Area<span>.</span></h1></div>
+        <p>Choose a sector to inspect its exterior identity, route function, and battle-only interior progression. Exterior views establish the map; combat remains inside.</p>
+        <small>05 SECTORS / 02 ROUTES / 03 DEPTH STATES</small>
+      </header>
+
+      <section class="area-context-note" aria-labelledby="area-context-title">
+        <header><span>DESIGN NOTE / 设计说明</span><h2 id="area-context-title">区域路线与战斗场景</h2></header>
+        <div>
+          <p><small>ROUTE LOGIC</small>A 工业铸造区与 B 物流区构成两条工业推进路线，并最终汇入 D 大型全自动工厂区；C 垃圾场则作为另一条独立路线，通往 E 医疗器械区。</p>
+          <p><small>COMBAT LOGIC</small>玩家在地图上选择区域时，页面展示该区域的主要外观和路线关系。进入战斗后只呈现内部空间，随着战斗深入，通过照明、机械状态和障碍密度产生简单变化，并配置少量具有区域特征的敌人。</p>
+        </div>
+      </section>
+
+      <section class="area-workspace" aria-label="Combat area map and selected sector">
+        <article class="sector-map-panel">
+          <header><div><span>01</span><h2>Sector Network</h2></div><p><i></i> Select a node</p></header>
+          <div class="sector-map-canvas" role="group" aria-label="Area route map">
+            <svg class="sector-links" viewBox="0 0 1000 560" aria-hidden="true" preserveAspectRatio="none">
+              <defs><marker id="route-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs>
+              <path class="route-main" d="M235 135 C430 135 520 210 740 245" marker-end="url(#route-arrow)"></path>
+              <path class="route-main" d="M235 350 C430 350 520 285 740 255" marker-end="url(#route-arrow)"></path>
+              <path class="route-alt" d="M420 460 C570 460 650 430 790 405" marker-end="url(#route-arrow)"></path>
+            </svg>
+            <span class="map-coordinate coordinate-x">X / 041.72</span><span class="map-coordinate coordinate-y">Y / 908.16</span>
+            <button class="sector-node sector-a active" type="button" data-sector-select="a" aria-pressed="true"><span>A</span><strong>Industrial<br>Foundry</strong><small>ENTRY / 01</small></button>
+            <button class="sector-node sector-b" type="button" data-sector-select="b" aria-pressed="false"><span>B</span><strong>Logistics<br>Zone</strong><small>ENTRY / 02</small></button>
+            <button class="sector-node sector-c" type="button" data-sector-select="c" aria-pressed="false"><span>C</span><strong>Scrap<br>Yard</strong><small>ENTRY / 03</small></button>
+            <button class="sector-node sector-d sector-terminal" type="button" data-sector-select="d" aria-pressed="false"><span>D</span><strong>Automated<br>Factory</strong><small>TERMINAL / A+B</small></button>
+            <button class="sector-node sector-e sector-terminal" type="button" data-sector-select="e" aria-pressed="false"><span>E</span><strong>Medical<br>Equipment</strong><small>TERMINAL / C</small></button>
+            <div class="route-key" aria-hidden="true"><span>A</span><b>→</b><span>D</span><span>B</span><b>→</b><span>D</span><span>C</span><b>→</b><span>E</span></div>
+          </div>
+        </article>
+
+        <article class="sector-inspector" aria-live="polite">
+          <header><div><span data-sector-index>A / 01</span><h2 data-sector-title>Industrial Foundry</h2></div><strong data-sector-route>A → D</strong></header>
+          <div class="sector-appearance" role="img" aria-label="Placeholder for selected sector exterior image">
+            <span class="media-slot-label">EXTERIOR IMAGE SLOT</span><b data-sector-letter>A</b><i></i><i></i><i></i>
+            <small data-sector-image-label>FOUNDRY SUPERSTRUCTURE / IMAGE PENDING</small>
+          </div>
+          <p data-sector-description>Molten-metal production towers form the first route into the automated factory. The map view emphasizes furnace scale, exhaust lines, and heavy vertical silhouettes.</p>
+          <dl><div><dt>Function</dt><dd data-sector-function>Entry sector</dd></div><div><dt>Visual cue</dt><dd data-sector-cue>Heat / verticality / molten flow</dd></div><div><dt>Combat view</dt><dd>Interior only</dd></div></dl>
+        </article>
+      </section>
+
+      <section class="master-map-design" aria-labelledby="master-map-title">
+        <header class="section-register"><div><span>02</span><h2 id="master-map-title">Master Map Design</h2></div><p>区域俯视规划与路线汇合</p><small>SELECT A DISTRICT</small></header>
+        <div class="master-map-layout">
+          <div class="master-map-canvas" role="group" aria-label="Clickable top-down district map">
+            <svg class="master-map-routes" viewBox="0 0 1000 620" aria-hidden="true" preserveAspectRatio="none">
+              <path class="map-boundary" d="M55 86 L268 42 L472 88 L666 52 L918 120 L954 320 L891 548 L642 585 L426 550 L214 590 L52 472 Z"></path>
+              <path class="map-route map-route-industrial" d="M165 165 C340 176 438 224 566 292 C690 356 760 272 845 233"></path>
+              <path class="map-route map-route-logistics" d="M170 410 C330 396 420 354 566 292"></path>
+              <path class="map-route map-route-medical" d="M475 487 C645 472 725 457 842 437"></path>
+              <path class="map-service" d="M270 64 L302 562 M510 84 L472 552 M722 72 L680 570"></path>
+              <circle cx="566" cy="292" r="19"></circle><circle cx="842" cy="437" r="13"></circle>
+            </svg>
+            <span class="master-map-axis map-axis-n">N / 00°</span><span class="master-map-axis map-axis-scale">SCALE 1 : 2400</span>
+            <button class="map-district map-district-a active" type="button" data-sector-select="a" aria-pressed="true"><span>A</span><strong>工业铸造区</strong><small>INDUSTRIAL FOUNDRY</small></button>
+            <button class="map-district map-district-b" type="button" data-sector-select="b" aria-pressed="false"><span>B</span><strong>物流区</strong><small>LOGISTICS ZONE</small></button>
+            <button class="map-district map-district-c" type="button" data-sector-select="c" aria-pressed="false"><span>C</span><strong>垃圾场</strong><small>SCRAP YARD</small></button>
+            <button class="map-district map-district-d" type="button" data-sector-select="d" aria-pressed="false"><span>D</span><strong>大型全自动工厂区</strong><small>AUTOMATED FACTORY</small></button>
+            <button class="map-district map-district-e" type="button" data-sector-select="e" aria-pressed="false"><span>E</span><strong>医疗器械区</strong><small>MEDICAL EQUIPMENT</small></button>
+            <div class="map-legend" aria-hidden="true"><span><i></i> A/B → D</span><span><i></i> C → E</span><span><b></b> SERVICE</span></div>
+          </div>
+          <aside class="master-map-notes" aria-live="polite">
+            <span>ACTIVE DISTRICT</span><h3 data-map-active-title>A · Industrial Foundry</h3><p data-map-active-summary>Molten-metal production towers form the first route into the automated factory. The map view emphasizes furnace scale, exhaust lines, and heavy vertical silhouettes.</p>
+            <dl><div><dt>Map layer</dt><dd>Exterior identity</dd></div><div><dt>Battle layer</dt><dd>Interior only</dd></div><div><dt>Progression</dt><dd>03 states</dd></div></dl>
+            <div class="map-design-rule"><small>DESIGN RULE</small><p>地图负责建立区域外观、距离与路线方向；进入战斗后，空间切换为该区域的内部场景。</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="battle-interior" aria-labelledby="battle-interior-title">
+        <header class="section-register"><div><span>03</span><h2 id="battle-interior-title">Battle Interior Progression</h2></div><p><b data-battle-sector-label>A / INDUSTRIAL FOUNDRY</b> · Exterior hidden during combat</p><small>SELECT DEPTH</small></header>
+        <div class="interior-layout">
+          <div class="depth-switch" role="group" aria-label="Battle depth">
+            <button class="active" type="button" data-depth-select="0" aria-pressed="true"><span>01</span><strong>Entry</strong><small>Recognition</small></button>
+            <button type="button" data-depth-select="1" aria-pressed="false"><span>02</span><strong>Pressure</strong><small>Escalation</small></button>
+            <button type="button" data-depth-select="2" aria-pressed="false"><span>03</span><strong>Core</strong><small>Resolution</small></button>
+          </div>
+          <div class="interior-stage" data-depth="0">
+            <span class="media-slot-label">INTERIOR SCENE IMAGE SLOT</span><div class="stage-register"><strong data-stage-title>Furnace Intake</strong><small data-stage-condition>Heat 41% / Visibility clear</small></div><div class="stage-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="stage-notes"><span data-stage-index>DEPTH 01 / 03</span><h3 data-stage-heading>Recognizable entry geometry</h3><p data-stage-copy>The first combat space keeps the sector's core material and lighting language readable. Paths remain broad and enemy pressure is low.</p><div><i></i><i></i><i></i></div></div>
+        </div>
+      </section>
+
+      <section class="area-enemies" aria-labelledby="area-enemies-title">
+        <header class="section-register"><div><span>04</span><h2 id="area-enemies-title">Encounter Units</h2></div><p><b data-enemy-sector-label>A / INDUSTRIAL FOUNDRY</b> · Sector units</p><small>IMAGE SLOTS READY</small></header>
+        <div class="area-enemy-grid" aria-live="polite">
+          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>01</span><b data-enemy-initials>FW</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Forge Warden</h3><p data-enemy-role>A · Heavy guard</p><dl><div><dt>Threat</dt><dd data-enemy-threat>High</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Slow</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>02</span><b data-enemy-initials>SD</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Slag Drone</h3><p data-enemy-role>A · Ranged support</p><dl><div><dt>Threat</dt><dd data-enemy-threat>Mid</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Hover</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>03</span><b data-enemy-initials>CC</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Casting Crawler</h3><p data-enemy-role>A · Pursuit unit</p><dl><div><dt>Threat</dt><dd data-enemy-threat>Mid</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Rapid</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>04</span><b data-enemy-initials>HM</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Heat Monitor</h3><p data-enemy-role>A · Alarm unit</p><dl><div><dt>Threat</dt><dd data-enemy-threat>Low</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Reactive</dd></div></dl></article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 Art Direction Lab</span><span>Area · 07</span><span>EN</span></footer>
+  </div>
+  <script type="module" src="js/theme.js"></script><script type="module" src="js/area.js"></script>
+</body>
+</html>

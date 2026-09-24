@@ -2,3 +2,5 @@ node_modules/
 dist/
 *.tgz
 *.tar.gz
+.openai/hosting.json
+public/assets/og.jpg

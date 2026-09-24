@@ -1,37 +1,37 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Interactive combat area and encounter progression studies from Art Direction Lab.">
-  <title>Area — Art Direction Lab</title>
+  <meta name="description" content="Art Direction Lab 的交互式战斗区域、场景推进与敌人设计研究。">
+  <title>区域设计 — 艺术指导实验室</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="module-page area-page" data-page="area" data-sector="a">
-  <aside class="rail rail-left" aria-label="Page position"><a class="compass" href="index.html" aria-label="Art Direction Lab home"><span></span></a><div class="folio"><strong>07</strong><small>/ 08</small></div><div class="rail-line"></div><div class="rail-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div><span class="rail-note">SELECT A SECTOR</span></aside>
-  <aside class="rail rail-right" aria-hidden="true"><span class="crosshair"></span><span class="rail-note">MAP / INTERIOR / DEPTH</span></aside>
+  <aside class="rail rail-left" aria-label="页面位置"><a class="compass" href="index.html" aria-label="返回 Art Direction Lab 首页"><span></span></a><div class="folio"><strong>07</strong><small>/ 08</small></div><div class="rail-line"></div><div class="rail-dots" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i></div><span class="rail-note">选择区域</span></aside>
+  <aside class="rail rail-right" aria-hidden="true"><span class="crosshair"></span><span class="rail-note">地图 / 内部 / 深度</span></aside>
   <div class="site-frame">
-    <header class="site-header"><a class="brand" href="index.html"><strong>Art Direction Lab</strong><small>GAME ART EXPLORATION PLATFORM</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button><nav id="primary-nav" class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="overview.html">Overview</a><a href="architecture.html">Architecture</a><a href="costume.html">Costume</a><a href="battle.html">Battle</a><a href="enemy.html">Enemy</a><a class="active" href="area.html">Area</a><a href="ui.html">UI Design</a></nav><div class="route-switch" aria-label="Visual route"><span>ROUTE</span><div><button class="active" type="button" data-theme="a" onclick="setTheme('a')">Plan A</button><button type="button" data-theme="b" onclick="setTheme('b')">Plan B</button></div></div></header>
+    <header class="site-header"><a class="brand" href="index.html"><strong>艺术指导实验室</strong><small>游戏美术探索平台</small></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">菜单</button><nav id="primary-nav" class="primary-nav" aria-label="主导航"><a href="index.html">首页</a><a href="overview.html">总览</a><a href="architecture.html">建筑</a><a href="costume.html">服饰</a><a href="battle.html">战斗</a><a href="enemy.html">敌人</a><a class="active" href="area.html">区域</a><a href="ui.html">界面设计</a></nav><div class="route-switch" aria-label="视觉方案"><span>方案</span><div><button class="active" type="button" data-theme="a" onclick="setTheme('a')">方案 A</button><button type="button" data-theme="b" onclick="setTheme('b')">方案 B</button></div></div></header>
 
     <main class="area-main">
       <header class="area-command-head">
-        <div><p class="eyebrow">ART DIRECTION × COMBAT AREA</p><h1>Area<span>.</span></h1></div>
-        <p>Choose a sector to inspect its exterior identity, route function, and battle-only interior progression. Exterior views establish the map; combat remains inside.</p>
-        <small>05 SECTORS / 02 ROUTES / 03 DEPTH STATES</small>
+        <div><p class="eyebrow">艺术指导 × 战斗区域</p><h1>区域<span>.</span></h1></div>
+        <p>选择区域后，可查看其外观识别、路线功能与战斗内部场景的推进变化。地图负责建立外观，战斗始终发生在区域内部。</p>
+        <small>05 个区域 / 02 条路线 / 03 个深度阶段</small>
       </header>
 
       <section class="area-context-note" aria-labelledby="area-context-title">
-        <header><span>DESIGN NOTE / 设计说明</span><h2 id="area-context-title">区域路线与战斗场景</h2></header>
+        <header><span>设计说明</span><h2 id="area-context-title">区域路线与战斗场景</h2></header>
         <div>
-          <p><small>ROUTE LOGIC</small>A 工业铸造区与 B 物流区构成两条工业推进路线，并最终汇入 D 大型全自动工厂区；C 垃圾场则作为另一条独立路线，通往 E 医疗器械区。</p>
-          <p><small>COMBAT LOGIC</small>玩家在地图上选择区域时，页面展示该区域的主要外观和路线关系。进入战斗后只呈现内部空间，随着战斗深入，通过照明、机械状态和障碍密度产生简单变化，并配置少量具有区域特征的敌人。</p>
+          <p><small>路线逻辑</small>A 工业铸造区与 B 物流区构成两条工业推进路线，并最终汇入 D 大型全自动军工厂区；C 垃圾场则作为另一条独立路线，通往 E 医疗区。</p>
+          <p><small>战斗逻辑</small>玩家在地图上选择区域时，页面展示该区域的主要外观和路线关系。进入战斗后只呈现内部空间，随着战斗深入，通过照明、机械状态和障碍密度产生简单变化，并配置少量具有区域特征的敌人。</p>
         </div>
       </section>
 
-      <section class="area-workspace" aria-label="Combat area map and selected sector">
+      <section class="area-workspace" aria-label="战斗区域地图与当前区域">
         <article class="sector-map-panel">
-          <header><div><span>01</span><h2>Sector Network</h2></div><p><i></i> Select a node</p></header>
-          <div class="sector-map-canvas" role="group" aria-label="Area route map">
+          <header><div><span>01</span><h2>区域网络</h2></div><p><i></i> 选择节点</p></header>
+          <div class="sector-map-canvas" role="group" aria-label="区域路线图">
             <svg class="sector-links" viewBox="0 0 1000 560" aria-hidden="true" preserveAspectRatio="none">
               <defs><marker id="route-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker></defs>
               <path class="route-main" d="M235 135 C430 135 520 210 740 245" marker-end="url(#route-arrow)"></path>
@@ -39,30 +39,31 @@
               <path class="route-alt" d="M420 460 C570 460 650 430 790 405" marker-end="url(#route-arrow)"></path>
             </svg>
             <span class="map-coordinate coordinate-x">X / 041.72</span><span class="map-coordinate coordinate-y">Y / 908.16</span>
-            <button class="sector-node sector-a active" type="button" data-sector-select="a" aria-pressed="true"><span>A</span><strong>Industrial<br>Foundry</strong><small>ENTRY / 01</small></button>
-            <button class="sector-node sector-b" type="button" data-sector-select="b" aria-pressed="false"><span>B</span><strong>Logistics<br>Zone</strong><small>ENTRY / 02</small></button>
-            <button class="sector-node sector-c" type="button" data-sector-select="c" aria-pressed="false"><span>C</span><strong>Scrap<br>Yard</strong><small>ENTRY / 03</small></button>
-            <button class="sector-node sector-d sector-terminal" type="button" data-sector-select="d" aria-pressed="false"><span>D</span><strong>Automated<br>Factory</strong><small>TERMINAL / A+B</small></button>
-            <button class="sector-node sector-e sector-terminal" type="button" data-sector-select="e" aria-pressed="false"><span>E</span><strong>Medical<br>Equipment</strong><small>TERMINAL / C</small></button>
+            <button class="sector-node sector-a active" type="button" data-sector-select="a" aria-pressed="true"><span>A</span><strong>工业<br>铸造区</strong><small>入口 / 01</small></button>
+            <button class="sector-node sector-b" type="button" data-sector-select="b" aria-pressed="false"><span>B</span><strong>物流区</strong><small>入口 / 02</small></button>
+            <button class="sector-node sector-c" type="button" data-sector-select="c" aria-pressed="false"><span>C</span><strong>垃圾场</strong><small>入口 / 03</small></button>
+            <button class="sector-node sector-d sector-terminal" type="button" data-sector-select="d" aria-pressed="false"><span>D</span><strong>大型全自动<br>军工厂区</strong><small>终点 / A+B</small></button>
+            <button class="sector-node sector-e sector-terminal" type="button" data-sector-select="e" aria-pressed="false"><span>E</span><strong>医疗区</strong><small>终点 / C</small></button>
             <div class="route-key" aria-hidden="true"><span>A</span><b>→</b><span>D</span><span>B</span><b>→</b><span>D</span><span>C</span><b>→</b><span>E</span></div>
           </div>
         </article>
 
         <article class="sector-inspector" aria-live="polite">
-          <header><div><span data-sector-index>A / 01</span><h2 data-sector-title>Industrial Foundry</h2></div><strong data-sector-route>A → D</strong></header>
-          <div class="sector-appearance" role="img" aria-label="Placeholder for selected sector exterior image">
-            <span class="media-slot-label">EXTERIOR IMAGE SLOT</span><b data-sector-letter>A</b><i></i><i></i><i></i>
-            <small data-sector-image-label>FOUNDRY SUPERSTRUCTURE / IMAGE PENDING</small>
+          <header><div><span data-sector-index>A / 01</span><h2 data-sector-title>工业铸造区</h2></div><strong data-sector-route>A → D</strong></header>
+          <div class="sector-appearance" role="img" aria-label="当前区域外观图像">
+            <button class="sector-media-image" type="button" data-gallery-src="" disabled><img alt=""></button>
+            <span class="media-slot-label">区域外观图像</span><b data-sector-letter>A</b><i></i><i></i><i></i>
+            <small data-sector-image-label>铸造区主体结构 / 图片待补充</small>
           </div>
-          <p data-sector-description>Molten-metal production towers form the first route into the automated factory. The map view emphasizes furnace scale, exhaust lines, and heavy vertical silhouettes.</p>
-          <dl><div><dt>Function</dt><dd data-sector-function>Entry sector</dd></div><div><dt>Visual cue</dt><dd data-sector-cue>Heat / verticality / molten flow</dd></div><div><dt>Combat view</dt><dd>Interior only</dd></div></dl>
+          <p data-sector-description>熔融金属生产塔构成通往全自动工厂的第一条路线。地图外观重点表现熔炉尺度、排气管线与沉重的垂直轮廓。</p>
+          <dl><div><dt>功能</dt><dd data-sector-function>入口区域</dd></div><div><dt>视觉特征</dt><dd data-sector-cue>高温 / 垂直结构 / 熔融流动</dd></div><div><dt>战斗画面</dt><dd>仅表现内部</dd></div></dl>
         </article>
       </section>
 
       <section class="master-map-design" aria-labelledby="master-map-title">
-        <header class="section-register"><div><span>02</span><h2 id="master-map-title">Master Map Design</h2></div><p>区域俯视规划与路线汇合</p><small>SELECT A DISTRICT</small></header>
+        <header class="section-register"><div><span>02</span><h2 id="master-map-title">主地图设计</h2></div><p>地图构成与区域视觉参考</p><small>点击放大</small></header>
         <div class="master-map-layout">
-          <div class="master-map-canvas" role="group" aria-label="Clickable top-down district map">
+          <div class="master-map-canvas" role="group" aria-label="可点击放大的地图设计参考">
             <svg class="master-map-routes" viewBox="0 0 1000 620" aria-hidden="true" preserveAspectRatio="none">
               <path class="map-boundary" d="M55 86 L268 42 L472 88 L666 52 L918 120 L954 320 L891 548 L642 585 L426 550 L214 590 L52 472 Z"></path>
               <path class="map-route map-route-industrial" d="M165 165 C340 176 438 224 566 292 C690 356 760 272 845 233"></path>
@@ -71,49 +72,130 @@
               <path class="map-service" d="M270 64 L302 562 M510 84 L472 552 M722 72 L680 570"></path>
               <circle cx="566" cy="292" r="19"></circle><circle cx="842" cy="437" r="13"></circle>
             </svg>
-            <span class="master-map-axis map-axis-n">N / 00°</span><span class="master-map-axis map-axis-scale">SCALE 1 : 2400</span>
+            <span class="master-map-axis map-axis-n">北 / 00°</span><span class="master-map-axis map-axis-scale">比例 1 : 2400</span>
             <button class="map-district map-district-a active" type="button" data-sector-select="a" aria-pressed="true"><span>A</span><strong>工业铸造区</strong><small>INDUSTRIAL FOUNDRY</small></button>
             <button class="map-district map-district-b" type="button" data-sector-select="b" aria-pressed="false"><span>B</span><strong>物流区</strong><small>LOGISTICS ZONE</small></button>
             <button class="map-district map-district-c" type="button" data-sector-select="c" aria-pressed="false"><span>C</span><strong>垃圾场</strong><small>SCRAP YARD</small></button>
-            <button class="map-district map-district-d" type="button" data-sector-select="d" aria-pressed="false"><span>D</span><strong>大型全自动工厂区</strong><small>AUTOMATED FACTORY</small></button>
-            <button class="map-district map-district-e" type="button" data-sector-select="e" aria-pressed="false"><span>E</span><strong>医疗器械区</strong><small>MEDICAL EQUIPMENT</small></button>
+            <button class="map-district map-district-d" type="button" data-sector-select="d" aria-pressed="false"><span>D</span><strong>大型全自动军工厂区</strong><small>自动化军工生产</small></button>
+            <button class="map-district map-district-e" type="button" data-sector-select="e" aria-pressed="false"><span>E</span><strong>医疗区</strong><small>医疗设备与实验设施</small></button>
             <div class="map-legend" aria-hidden="true"><span><i></i> A/B → D</span><span><i></i> C → E</span><span><b></b> SERVICE</span></div>
+            <div class="master-map-reference-overlay" aria-label="地图设计参考">
+              <figure class="map-reference-card">
+                <button type="button" data-gallery-src="assets/area-maps/01-island-world-layout.jpg" data-gallery-alt="立体岛屿世界地图设计参考">
+                  <img src="assets/area-maps/01-island-world-layout.jpg" alt="立体岛屿世界地图设计参考" loading="lazy" decoding="async">
+                  <span>01 / 世界结构</span>
+                </button>
+                <figcaption><span>01</span><strong>整体世界结构</strong><small>岛屿路线 / 环境过渡</small></figcaption>
+              </figure>
+              <figure class="map-reference-card">
+                <button type="button" data-gallery-src="assets/area-maps/02-vertical-hub-layout.jpg" data-gallery-alt="纵向功能节点地图设计参考">
+                  <img src="assets/area-maps/02-vertical-hub-layout.jpg" alt="纵向功能节点地图设计参考" loading="lazy" decoding="async">
+                  <span>02 / 功能节点</span>
+                </button>
+                <figcaption><span>02</span><strong>功能节点组织</strong><small>纵向流程 / 节点连接</small></figcaption>
+              </figure>
+              <figure class="map-reference-card">
+                <button type="button" data-gallery-src="assets/area-maps/03-biome-world-layout.jpg" data-gallery-alt="多环境板块世界地图设计参考">
+                  <img src="assets/area-maps/03-biome-world-layout.jpg" alt="多环境板块世界地图设计参考" loading="lazy" decoding="async">
+                  <span>03 / 区域环境</span>
+                </button>
+                <figcaption><span>03</span><strong>区域环境分层</strong><small>区域识别 / 路线对比</small></figcaption>
+              </figure>
+            </div>
           </div>
           <aside class="master-map-notes" aria-live="polite">
-            <span>ACTIVE DISTRICT</span><h3 data-map-active-title>A · Industrial Foundry</h3><p data-map-active-summary>Molten-metal production towers form the first route into the automated factory. The map view emphasizes furnace scale, exhaust lines, and heavy vertical silhouettes.</p>
-            <dl><div><dt>Map layer</dt><dd>Exterior identity</dd></div><div><dt>Battle layer</dt><dd>Interior only</dd></div><div><dt>Progression</dt><dd>03 states</dd></div></dl>
-            <div class="map-design-rule"><small>DESIGN RULE</small><p>地图负责建立区域外观、距离与路线方向；进入战斗后，空间切换为该区域的内部场景。</p></div>
+            <span>当前区域</span><h3 data-map-active-title>A · 工业铸造区</h3><p data-map-active-summary>熔融金属生产塔构成通往全自动工厂的第一条路线。地图外观重点表现熔炉尺度、排气管线与沉重的垂直轮廓。</p>
+            <dl><div><dt>地图层</dt><dd>外观识别</dd></div><div><dt>战斗层</dt><dd>仅表现内部</dd></div><div><dt>推进变化</dt><dd>03 个阶段</dd></div></dl>
+            <div class="map-design-rule"><small>设计规则</small><p>地图负责建立区域外观、距离与路线方向；进入战斗后，空间切换为该区域的内部场景。</p></div>
           </aside>
         </div>
       </section>
 
       <section class="battle-interior" aria-labelledby="battle-interior-title">
-        <header class="section-register"><div><span>03</span><h2 id="battle-interior-title">Battle Interior Progression</h2></div><p><b data-battle-sector-label>A / INDUSTRIAL FOUNDRY</b> · Exterior hidden during combat</p><small>SELECT DEPTH</small></header>
+        <header class="section-register"><div><span>03</span><h2 id="battle-interior-title">战斗内部场景推进</h2></div><p><b data-battle-sector-label>A / 工业铸造区</b> · 战斗中不显示外观</p><small>选择深度</small></header>
         <div class="interior-layout">
-          <div class="depth-switch" role="group" aria-label="Battle depth">
-            <button class="active" type="button" data-depth-select="0" aria-pressed="true"><span>01</span><strong>Entry</strong><small>Recognition</small></button>
-            <button type="button" data-depth-select="1" aria-pressed="false"><span>02</span><strong>Pressure</strong><small>Escalation</small></button>
-            <button type="button" data-depth-select="2" aria-pressed="false"><span>03</span><strong>Core</strong><small>Resolution</small></button>
+          <div class="depth-switch" role="group" aria-label="战斗深度">
+            <button class="active" type="button" data-depth-select="0" aria-pressed="true"><span>01</span><strong>入口</strong><small>建立识别</small></button>
+            <button type="button" data-depth-select="1" aria-pressed="false"><span>02</span><strong>压力</strong><small>强度上升</small></button>
+            <button type="button" data-depth-select="2" aria-pressed="false"><span>03</span><strong>核心</strong><small>最终阶段</small></button>
           </div>
           <div class="interior-stage" data-depth="0">
-            <span class="media-slot-label">INTERIOR SCENE IMAGE SLOT</span><div class="stage-register"><strong data-stage-title>Furnace Intake</strong><small data-stage-condition>Heat 41% / Visibility clear</small></div><div class="stage-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <button class="interior-stage-image" type="button" data-gallery-src="" disabled><img alt=""></button>
+            <span class="media-slot-label">内部场景图像</span><div class="stage-register"><strong data-stage-title>熔炉入口</strong><small data-stage-condition>温度 41% / 视野清晰</small></div><div class="stage-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
           </div>
-          <div class="stage-notes"><span data-stage-index>DEPTH 01 / 03</span><h3 data-stage-heading>Recognizable entry geometry</h3><p data-stage-copy>The first combat space keeps the sector's core material and lighting language readable. Paths remain broad and enemy pressure is low.</p><div><i></i><i></i><i></i></div></div>
+          <div class="stage-notes"><span data-stage-index>深度 01 / 03</span><h3 data-stage-heading>建立可识别的入口结构</h3><p data-stage-copy>第一处战斗空间保留区域最核心的材质与照明语言。通路较宽，敌人压力较低。</p><div><i></i><i></i><i></i></div></div>
+        </div>
+        <div class="area-scene-library" data-scene-library="a">
+          <header><div><span>A / 场景</span><h3>铸造区场景素材</h3></div><p>严格对应“铸造区 / 场景”文件夹，共 05 个文件。点击图片可查看完整画面。</p></header>
+          <div>
+            <figure><button type="button" data-gallery-src="assets/area-a-foundry/scenes/01-scene.jpg" data-gallery-alt="铸造区场景素材 01"><img src="assets/area-a-foundry/scenes/01-scene.jpg" alt="铸造区场景素材 01" loading="lazy"><span>场景 01</span></button><figcaption>场景素材 01</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-a-foundry/scenes/02-scene.jpg" data-gallery-alt="铸造区场景素材 02"><img src="assets/area-a-foundry/scenes/02-scene.jpg" alt="铸造区场景素材 02" loading="lazy"><span>场景 02</span></button><figcaption>场景素材 02</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-a-foundry/scenes/03-scene.jpg" data-gallery-alt="铸造区场景素材 03"><img src="assets/area-a-foundry/scenes/03-scene.jpg" alt="铸造区场景素材 03" loading="lazy"><span>场景 03</span></button><figcaption>场景素材 03</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-a-foundry/scenes/04-scene.jpg" data-gallery-alt="铸造区场景素材 04"><img src="assets/area-a-foundry/scenes/04-scene.jpg" alt="铸造区场景素材 04" loading="lazy"><span>场景 04</span></button><figcaption>场景素材 04</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-a-foundry/scenes/05-scene.jpg" data-gallery-alt="铸造区场景素材 05"><img src="assets/area-a-foundry/scenes/05-scene.jpg" alt="铸造区场景素材 05" loading="lazy"><span>场景 05</span></button><figcaption>场景素材 05</figcaption></figure>
+          </div>
+        </div>
+        <div class="area-scene-library" data-scene-library="b" hidden>
+          <header><div><span>B / 场景</span><h3>物流区场景素材</h3></div><p>严格对应“物流区 / 场景”文件夹，共 04 个文件。点击图片可查看完整画面。</p></header>
+          <div>
+            <figure><button type="button" data-gallery-src="assets/area-b-logistics/scenes/01-scene.jpg" data-gallery-alt="物流区场景素材 01"><img src="assets/area-b-logistics/scenes/01-scene.jpg" alt="物流区场景素材 01" loading="lazy"><span>场景 01</span></button><figcaption>场景素材 01</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-b-logistics/scenes/02-scene.jpg" data-gallery-alt="物流区场景素材 02"><img src="assets/area-b-logistics/scenes/02-scene.jpg" alt="物流区场景素材 02" loading="lazy"><span>场景 02</span></button><figcaption>场景素材 02</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-b-logistics/scenes/03-scene.jpg" data-gallery-alt="物流区场景素材 03"><img src="assets/area-b-logistics/scenes/03-scene.jpg" alt="物流区场景素材 03" loading="lazy"><span>场景 03</span></button><figcaption>场景素材 03</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-b-logistics/scenes/04-scene.jpg" data-gallery-alt="物流区场景素材 04"><img src="assets/area-b-logistics/scenes/04-scene.jpg" alt="物流区场景素材 04" loading="lazy"><span>场景 04</span></button><figcaption>场景素材 04</figcaption></figure>
+          </div>
+        </div>
+        <div class="area-scene-library" data-scene-library="c" hidden>
+          <header><div><span>C / 场景</span><h3>垃圾场场景素材</h3></div><p>严格对应“垃圾场 / 场景”文件夹，共 05 个文件。点击图片可查看完整画面。</p></header>
+          <div>
+            <figure><button type="button" data-gallery-src="assets/area-c-scrapyard/scenes/01-scrap-garage-exterior.jpg" data-gallery-alt="垃圾场场景素材 01"><img src="assets/area-c-scrapyard/scenes/01-scrap-garage-exterior.jpg" alt="垃圾场场景素材 01" loading="lazy"><span>场景 01</span></button><figcaption>场景素材 01</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-c-scrapyard/scenes/02-broken-barrier-entry.jpg" data-gallery-alt="垃圾场场景素材 02"><img src="assets/area-c-scrapyard/scenes/02-broken-barrier-entry.jpg" alt="垃圾场场景素材 02" loading="lazy"><span>场景 02</span></button><figcaption>场景素材 02</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-c-scrapyard/scenes/03-sorting-floor-pressure.jpg" data-gallery-alt="垃圾场场景素材 03"><img src="assets/area-c-scrapyard/scenes/03-sorting-floor-pressure.jpg" alt="垃圾场场景素材 03" loading="lazy"><span>场景 03</span></button><figcaption>场景素材 03</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-c-scrapyard/scenes/04-recovery-lab-core.jpg" data-gallery-alt="垃圾场场景素材 04"><img src="assets/area-c-scrapyard/scenes/04-recovery-lab-core.jpg" alt="垃圾场场景素材 04" loading="lazy"><span>场景 04</span></button><figcaption>场景素材 04</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-c-scrapyard/scenes/05-recovery-lab-core-copy.jpg" data-gallery-alt="垃圾场场景素材 05"><img src="assets/area-c-scrapyard/scenes/05-recovery-lab-core-copy.jpg" alt="垃圾场场景素材 05" loading="lazy"><span>场景 05</span></button><figcaption>场景素材 05</figcaption></figure>
+          </div>
+        </div>
+        <div class="area-scene-library" data-scene-library="d" hidden>
+          <header><div><span>D / 场景</span><h3>军工厂场景素材</h3></div><p>严格对应“军工厂 / 场景”文件夹，共 05 个文件。点击图片可查看完整画面。</p></header>
+          <div>
+            <figure><button type="button" data-gallery-src="assets/area-d-military-factory/scenes/01-scene.jpg" data-gallery-alt="军工厂场景素材 01"><img src="assets/area-d-military-factory/scenes/01-scene.jpg" alt="军工厂场景素材 01" loading="lazy"><span>场景 01</span></button><figcaption>场景素材 01</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-d-military-factory/scenes/02-scene.jpg" data-gallery-alt="军工厂场景素材 02"><img src="assets/area-d-military-factory/scenes/02-scene.jpg" alt="军工厂场景素材 02" loading="lazy"><span>场景 02</span></button><figcaption>场景素材 02</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-d-military-factory/scenes/03-scene.jpg" data-gallery-alt="军工厂场景素材 03"><img src="assets/area-d-military-factory/scenes/03-scene.jpg" alt="军工厂场景素材 03" loading="lazy"><span>场景 03</span></button><figcaption>场景素材 03</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-d-military-factory/scenes/04-scene.jpg" data-gallery-alt="军工厂场景素材 04"><img src="assets/area-d-military-factory/scenes/04-scene.jpg" alt="军工厂场景素材 04" loading="lazy"><span>场景 04</span></button><figcaption>场景素材 04</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-d-military-factory/scenes/05-scene.jpg" data-gallery-alt="军工厂场景素材 05"><img src="assets/area-d-military-factory/scenes/05-scene.jpg" alt="军工厂场景素材 05" loading="lazy"><span>场景 05</span></button><figcaption>场景素材 05</figcaption></figure>
+          </div>
+        </div>
+        <div class="area-scene-library" data-scene-library="e" hidden>
+          <header><div><span>E / 场景</span><h3>医疗区场景素材</h3></div><p>严格对应“医疗区 / 场景”文件夹，共 05 个文件。点击图片可查看完整画面。</p></header>
+          <div>
+            <figure><button type="button" data-gallery-src="assets/area-e-medical/scenes/01-scene.jpg" data-gallery-alt="医疗区场景素材 01"><img src="assets/area-e-medical/scenes/01-scene.jpg" alt="医疗区场景素材 01" loading="lazy"><span>场景 01</span></button><figcaption>场景素材 01</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-e-medical/scenes/02-scene.jpg" data-gallery-alt="医疗区场景素材 02"><img src="assets/area-e-medical/scenes/02-scene.jpg" alt="医疗区场景素材 02" loading="lazy"><span>场景 02</span></button><figcaption>场景素材 02</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-e-medical/scenes/03-scene.jpg" data-gallery-alt="医疗区场景素材 03"><img src="assets/area-e-medical/scenes/03-scene.jpg" alt="医疗区场景素材 03" loading="lazy"><span>场景 03</span></button><figcaption>场景素材 03</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-e-medical/scenes/04-scene.jpg" data-gallery-alt="医疗区场景素材 04"><img src="assets/area-e-medical/scenes/04-scene.jpg" alt="医疗区场景素材 04" loading="lazy"><span>场景 04</span></button><figcaption>场景素材 04</figcaption></figure>
+            <figure><button type="button" data-gallery-src="assets/area-e-medical/scenes/05-scene.jpg" data-gallery-alt="医疗区场景素材 05"><img src="assets/area-e-medical/scenes/05-scene.jpg" alt="医疗区场景素材 05" loading="lazy"><span>场景 05</span></button><figcaption>场景素材 05</figcaption></figure>
+          </div>
         </div>
       </section>
 
       <section class="area-enemies" aria-labelledby="area-enemies-title">
-        <header class="section-register"><div><span>04</span><h2 id="area-enemies-title">Encounter Units</h2></div><p><b data-enemy-sector-label>A / INDUSTRIAL FOUNDRY</b> · Sector units</p><small>IMAGE SLOTS READY</small></header>
+        <header class="section-register"><div><span>04</span><h2 id="area-enemies-title">区域敌人</h2></div><p><b data-enemy-sector-label>A / 工业铸造区</b> · 区域单位</p><small>素材按区域切换</small></header>
         <div class="area-enemy-grid" aria-live="polite">
-          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>01</span><b data-enemy-initials>FW</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Forge Warden</h3><p data-enemy-role>A · Heavy guard</p><dl><div><dt>Threat</dt><dd data-enemy-threat>High</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Slow</dd></div></dl></article>
-          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>02</span><b data-enemy-initials>SD</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Slag Drone</h3><p data-enemy-role>A · Ranged support</p><dl><div><dt>Threat</dt><dd data-enemy-threat>Mid</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Hover</dd></div></dl></article>
-          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>03</span><b data-enemy-initials>CC</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Casting Crawler</h3><p data-enemy-role>A · Pursuit unit</p><dl><div><dt>Threat</dt><dd data-enemy-threat>Mid</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Rapid</dd></div></dl></article>
-          <article class="area-enemy-card" data-enemy-card><div class="enemy-image-slot"><span data-enemy-number>04</span><b data-enemy-initials>HM</b><small>IMAGE PENDING</small></div><h3 data-enemy-name>Heat Monitor</h3><p data-enemy-role>A · Alarm unit</p><dl><div><dt>Threat</dt><dd data-enemy-threat>Low</dd></div><div><dt>Motion</dt><dd data-enemy-motion>Reactive</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>01</span><b data-enemy-initials>FW</b><small>图片待补充</small></button><h3 data-enemy-name>熔炉守卫</h3><p data-enemy-role>A · 重型守卫</p><dl><div><dt>威胁</dt><dd data-enemy-threat>高</dd></div><div><dt>行动</dt><dd data-enemy-motion>缓慢</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>02</span><b data-enemy-initials>SD</b><small>图片待补充</small></button><h3 data-enemy-name>炉渣无人机</h3><p data-enemy-role>A · 远程支援</p><dl><div><dt>威胁</dt><dd data-enemy-threat>中</dd></div><div><dt>行动</dt><dd data-enemy-motion>悬浮</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>03</span><b data-enemy-initials>CC</b><small>图片待补充</small></button><h3 data-enemy-name>铸造爬行机</h3><p data-enemy-role>A · 追击单位</p><dl><div><dt>威胁</dt><dd data-enemy-threat>中</dd></div><div><dt>行动</dt><dd data-enemy-motion>快速</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>04</span><b data-enemy-initials>HM</b><small>图片待补充</small></button><h3 data-enemy-name>热能监测器</h3><p data-enemy-role>A · 警报单位</p><dl><div><dt>威胁</dt><dd data-enemy-threat>低</dd></div><div><dt>行动</dt><dd data-enemy-motion>反应式</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card hidden><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>05</span><b data-enemy-initials>RC</b><small>图片待补充</small></button><h3 data-enemy-name>红色夹钳机</h3><p data-enemy-role>C · 夹持单位</p><dl><div><dt>威胁</dt><dd data-enemy-threat>中</dd></div><div><dt>行动</dt><dd data-enemy-motion>反应式</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card hidden><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>06</span><b data-enemy-initials>SD</b><small>图片待补充</small></button><h3 data-enemy-name>废料挖掘机</h3><p data-enemy-role>C · 挖掘单位</p><dl><div><dt>威胁</dt><dd data-enemy-threat>高</dd></div><div><dt>行动</dt><dd data-enemy-motion>稳定</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card hidden><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>07</span><b data-enemy-initials>MS</b><small>图片待补充</small></button><h3 data-enemy-name>医疗区敌人</h3><p data-enemy-role>E · 实验单位</p><dl><div><dt>威胁</dt><dd data-enemy-threat>高</dd></div><div><dt>行动</dt><dd data-enemy-motion>自适应</dd></div></dl></article>
+          <article class="area-enemy-card" data-enemy-card hidden><button class="enemy-image-slot" type="button" data-gallery-src="" disabled><img alt=""><span data-enemy-number>08</span><b data-enemy-initials>B8</b><small>图片待补充</small></button><h3 data-enemy-name>物流区敌人 08</h3><p data-enemy-role>B · 敌人素材</p><dl><div><dt>威胁</dt><dd data-enemy-threat>待定</dd></div><div><dt>行动</dt><dd data-enemy-motion>待定</dd></div></dl></article>
         </div>
       </section>
     </main>
-    <footer class="site-footer"><span>© 2026 Art Direction Lab</span><span>Area · 07</span><span>EN</span></footer>
+    <footer class="site-footer"><span>© 2026 艺术指导实验室</span><span>区域 · 07</span><span>中文</span></footer>
   </div>
-  <script type="module" src="js/theme.js"></script><script type="module" src="js/area.js"></script>
+  <dialog class="image-lightbox" aria-label="放大的参考图片">
+    <button class="image-lightbox-close" type="button">关闭 ×</button>
+    <div><img alt=""><p></p></div>
+  </dialog>
+  <script type="module" src="js/theme.js"></script><script type="module" src="js/area.js"></script><script type="module" src="js/gallery.js"></script>
 </body>
 </html>

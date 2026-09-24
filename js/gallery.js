@@ -7,10 +7,11 @@ if (dialog) {
 
   document.querySelectorAll('[data-gallery-src]').forEach((button) => {
     button.addEventListener('click', () => {
+      if (!button.dataset.gallerySrc) return;
       const preview = button.querySelector('img');
       dialogImage.src = button.dataset.gallerySrc;
       dialogImage.alt = button.dataset.galleryAlt || preview?.alt || '';
-      dialogCaption.textContent = button.closest('figure')?.querySelector('figcaption')?.textContent.trim() || '';
+      dialogCaption.textContent = button.dataset.galleryCaption || button.closest('figure')?.querySelector('figcaption')?.textContent.trim() || '';
       dialog.showModal();
       closeButton.focus();
     });
